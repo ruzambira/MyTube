@@ -1,18 +1,32 @@
 <!DOCTYPE html>
 <html>
 	<head>
-			<title>MyTube</title>
+		<title>MyTube</title>
 	</head>
-<body>
-	<script>
-	// do a google search for "how to create a link with jquery"
-	// and "how to append and element to a page with jquery"
-	// remember how to "loop over an array with javascript"
-	var links = [
-	"https://youtu.be/cKhVupvyhKk",
-	"https://youtu.be/STRPsW6IY8k",
-	"https://youtu.be/6JGy8zmskbM",
-	]
+<body onload = "list-item()">
+	<script type = "text/javascript">
+	
+	function list-item(){
+	var myArray = new Array();
+	myArray[0] = "Link #1 Why Learn Coding";
+	myArray[1] = "Link #2 What is HTML & CSS";
+	myArray[2] = "Link #3 What is JavaScript";
+	myArray[3] = "Link #4 What is JQuery";
+	myArray[4] = "Link #5 Using HTML, CSS and JS Together";
+	
+	var links = new Array();
+	link[0] = "https://www.youtube.com/watch?v=nPblG6ceqOs";
+	link[1] = "https://www.youtube.com/watch?v=y3UH2gAhwPI";
+	link[2] = "https://www.youtube.com/watch?v=XL9Ri8pO68w";
+	link[3] = "https://www.youtube.com/watch?v=BWXggB-T1jQ";
+	link[4] = "https://www.youtube.com/watch?v=wrdR5Su_Stg";
+	
+	for (var i=0; i <myArray.length; i++) {
+	document.write(myArray[i].link(links[i]));
+	document.write("<br">)
+	}
+	}
 	</script>
+	
 </body>
 </html>
